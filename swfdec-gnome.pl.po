@@ -1,0 +1,61 @@
+# Polish translation for swfdec-gnome.
+# This file is distributed under the same license as the swfdec-gnome package.
+# Jakub Bogusz <qboosh@pld-linux.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: swfdec-gnome 0.5.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-16 12:39+0100\n"
+"PO-Revision-Date: 2007-12-16 12:40+0100\n"
+"Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
+"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/swfdec-player.desktop.in.h:1
+msgid "Play Adobe Flash files"
+msgstr "Odtwarzanie plików Adobe Flash"
+
+#: ../data/swfdec-player.desktop.in.h:2 ../player/swfdec-player.c:63
+msgid "Swfdec Flash Player"
+msgstr "Odtwarzacz Swfdec Flash"
+
+#: ../player/swfdec-player.c:56
+msgid "don't play sound"
+msgstr "nie odtwarzaj dźwięku"
+
+#: ../player/swfdec-player.c:57
+msgid "start player paused"
+msgstr "uruchamiaj odtwarzacz jako zatrzymany"
+
+#: ../player/swfdec-window-handlers.c:54
+msgid "Select a file to play"
+msgstr "Plik do odtworzenia"
+
+#: ../player/swfdec-window.c:165
+msgid "Internal error in the user interface defintion"
+msgstr "Błąd wewnętrzny w definicji interfejsu użytkownika"
+
+#: ../thumbnailer/swfdec-thumbnailer.schemas.in.h:1
+msgid ""
+"Boolean options available, true enables thumbnailing and false disables the "
+"creation of new thumbnails"
+msgstr ""
+"Dostępne opcje logiczne, prawda włącza tworzenie miniaturek, fałsz wyłącza tworzenie nowych miniaturek"
+
+#: ../thumbnailer/swfdec-thumbnailer.schemas.in.h:2
+msgid "Enable thumbnailing of Flash files"
+msgstr "Włączenie tworzenia miniaturek plików Flash"
+
+#: ../thumbnailer/swfdec-thumbnailer.schemas.in.h:3
+msgid "Thumbnail command for Flash files"
+msgstr "Polecenie do tworzenia miniaturek plików Flash"
+
+#: ../thumbnailer/swfdec-thumbnailer.schemas.in.h:4
+msgid ""
+"Valid command plus arguments for the Flash file thumbnailer. See nautilus "
+"thumbnailer documentation for more information."
+msgstr ""
+"Poprawne polecenie i argumenty dla programu tworzącego miniaturki plików Flash. Więcej informacji w dokumentacji tworzenia miniaturek dla nautilusa."
