@@ -19,12 +19,13 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.357
-BuildRequires:	swfdec-devel >= 0.5.4
-BuildRequires:	swfdec-gtk-devel >= 0.5.4
+BuildRequires:	swfdec-devel = 0.5.4
+BuildRequires:	swfdec-gtk-devel = 0.5.4
 # for thumbnailer
 Requires(post,preun):	GConf2
+Requires:	swfdec-gtk = 0.5.4
 # for player
-Requires:	swfdec-icons >= 0.5.4
+Requires:	swfdec-icons = 0.5.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
