@@ -1,12 +1,12 @@
 Summary:	GNOME integration for swfdec Flash rendering library
 Summary(pl.UTF-8):	Integracja z GNOME biblioteki renderującej animacje Flash swfdec
 Name:		swfdec-gnome
-Version:	0.5.5
+Version:	2.21.90
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Multimedia
-Source0:	http://swfdec.freedesktop.org/download/swfdec-gnome/0.5/%{name}-%{version}.tar.gz
-# Source0-md5:	418ca1cc4adf6ceb7f8bcf29cc51fea7
+Source0:	http://download.gnome.org/sources/swfdec-gnome/2.21/%{name}-%{version}.tar.gz
+# Source0-md5:	6cb6ceae094162784a282aafd034bebf
 URL:		http://swfdec.freedesktop.org/wiki/
 # just gconftool-2
 BuildRequires:	GConf2
@@ -18,13 +18,13 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.357
-BuildRequires:	swfdec-devel = %{version}
-BuildRequires:	swfdec-gtk-devel = %{version}
+BuildRequires:	swfdec-devel >= 0.5.90
+BuildRequires:	swfdec-gtk-devel >= 0.5.90
 # for thumbnailer
 Requires(post,preun):	GConf2
-Requires:	swfdec-gtk = %{version}
+Requires:	swfdec-gtk >= 0.5.90
 # for player
-Requires:	swfdec-icons = %{version}
+Requires:	swfdec-icons >= 0.5.90
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -82,3 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 # thumbnailer
 %attr(755,root,root) %{_bindir}/swfdec-thumbnailer
 %{_sysconfdir}/gconf/schemas/swfdec-thumbnailer.schemas
+%{_mandir}/man1/*
