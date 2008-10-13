@@ -45,6 +45,7 @@ plików do wyświetlania w zarządcy plików Nautilus.
 %setup -q
 
 %build
+%{__intltoolize}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
