@@ -1,12 +1,12 @@
 Summary:	GNOME integration for swfdec Flash rendering library
 Summary(pl.UTF-8):	Integracja z GNOME biblioteki renderującej animacje Flash swfdec
 Name:		swfdec-gnome
-Version:	2.26.0
+Version:	2.30.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Multimedia
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/swfdec-gnome/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	53d611d9a76a06a703650c4b73fd44cc
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/swfdec-gnome/2.30/%{name}-%{version}.tar.bz2
+# Source0-md5:	c3a8429f42f3dd1aa3963588caaa2940
 URL:		http://swfdec.freedesktop.org/wiki/
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf >= 2.58
