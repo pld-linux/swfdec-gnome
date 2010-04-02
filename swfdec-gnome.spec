@@ -45,6 +45,9 @@ plików do wyświetlania w zarządcy plików Nautilus.
 %prep
 %setup -q
 
+%{__sed} -i -e 's/^en@shaw//' po/LINGUAS
+rm -f po/en@shaw.po
+
 %build
 %{__intltoolize}
 %{__libtoolize}
