@@ -8,12 +8,12 @@ Group:		X11/Applications/Multimedia
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/swfdec-gnome/2.30/%{name}-%{version}.tar.bz2
 # Source0-md5:	28a72e9c2ad79f33e4cf83bbd54fa124
 URL:		http://swfdec.freedesktop.org/wiki/
-BuildRequires:	GConf2-devel
+BuildRequires:	GConf2-devel >= 2
 BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake >= 1:1.6
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-common >= 2.26.0
-BuildRequires:	gtk+2-devel >= 2:2.12.0
+BuildRequires:	gtk+2-devel >= 2:2.14.0
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
@@ -24,6 +24,7 @@ BuildRequires:	swfdec-gtk-devel >= 0.8.0
 Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Requires(post,preun):	GConf2
+Requires:	gtk+2 >= 2:2.14.0
 Requires:	swfdec-gtk >= 0.8.0
 Obsoletes:	swfdec-icons <= 0.7.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,9 +45,6 @@ plików do wyświetlania w zarządcy plików Nautilus.
 
 %prep
 %setup -q
-
-%{__sed} -i -e 's/^en@shaw//' po/LINGUAS
-rm -f po/en@shaw.po
 
 %build
 %{__intltoolize}
@@ -88,9 +86,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/swfdec-player
 %{_datadir}/swfdec-gnome
 %{_desktopdir}/swfdec-player.desktop
+%{_mandir}/man1/swfdec-player.1*
 # thumbnailer
 %attr(755,root,root) %{_bindir}/swfdec-thumbnailer
 %{_sysconfdir}/gconf/schemas/swfdec-thumbnailer.schemas
-%{_mandir}/man1/*
-%{_iconsdir}/hicolor/*/*/*.png
-%{_iconsdir}/hicolor/*/*/*.svg
+%{_mandir}/man1/swfdec-thumbnailer.1*
+%{_iconsdir}/hicolor/*/apps/swfdec-gnome.png
+%{_iconsdir}/hicolor/scalable/apps/swfdec-gnome.svg
