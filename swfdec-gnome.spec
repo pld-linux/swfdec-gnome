@@ -12,7 +12,7 @@ URL:		http://swfdec.freedesktop.org/wiki/
 BuildRequires:	GConf2-devel >= 2
 BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake >= 1:1.6
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-common >= 2.26.0
 BuildRequires:	gtk+2-devel >= 2:2.14.0
 BuildRequires:	intltool >= 0.35.0
